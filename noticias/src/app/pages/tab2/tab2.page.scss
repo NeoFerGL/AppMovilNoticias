@@ -1,0 +1,22 @@
+/* CODIGO DEL VIDEO 
+::-webkit-scrollbar, *::-webkit-scrollbar{
+  display: none !important;
+  overflow: hidden;
+}*/
+ion-segment {
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none !important;
+    }
+
+    &::-webkit-scrollbar-track {
+        display: none !important;
+    }
+
+    overflow-x: auto; // Asegura el scroll horizontal si es necesario
+    -ms-overflow-style: none; // Para IE y Edge
+    scrollbar-width: none; // Para Firefox
+}
